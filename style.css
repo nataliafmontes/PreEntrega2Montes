@@ -1,0 +1,182 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+}
+
+h2 {
+color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 15px;
+}
+
+ul {
+    color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+.selector-footer {
+    color: grey ;
+    font-style: italic;
+    font-size: small;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+ul {
+    color: white
+}
+
+.headerindex {
+        background-color: black;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+}
+
+.display {
+    display: flex;
+    color: white;
+    font-weight: bold;
+
+}
+body {
+        background-color: black;/*
+        display: grid;
+        grid-template-areas: 
+        'encabezado encabezado'
+        'contenido publicidad'
+        'pie-pagina pie-pagina'
+        ;*/
+               
+}
+
+.headerindex {
+background-image: url(assets/agua.jpg);
+background-repeat: repeat-x;
+ max-width: 1200px;
+}
+
+header nav ul {
+    padding: 15px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.selector-logo {
+    height: 100px;
+    padding: 15px;
+    background-repeat: no-repeat;
+}
+
+.volver {
+    height: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    padding: 15px;
+}
+
+img {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* .seccionp {
+    width: 400;
+    height: 150;
+    background-color: black;
+    
+} */
+
+.boxgeneral {
+    width: 400px;
+    height: 200px;
+    background-color: grey;
+    padding: 10px;
+    border: solid 1px;
+    margin: 10px;
+    
+}
+
+.divindex {
+    width: 700px;
+    height: 200px;
+    background-color: black;
+    padding: 10px;
+    border: solid 1px;
+    margin: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    
+    
+    
+}
+
+.boxservicios {
+    width: 1000px;
+    height: 500px;
+    background-color: black;
+    padding: 10px;
+    border: solid 1px white;
+    margin: 10px;
+    
+}
+
+.boxservicios img {
+    /* width: 500px;
+    height: 300px; */
+    padding: 10px 15px;
+}
+
+/*
+.headernosotros {
+    background-color: aqua;
+    grid-area: encabezado;
+   
+}
+.mainnosotros {
+    background-color: yellow;
+    grid-area: contenido;
+}
+.asidenosotros {
+        background-color: orangered;
+        grid-area: publicidad;
+}
+.footernosotros {
+    background-color: white;
+}
+*/
+.hero {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 50px;
+}
+

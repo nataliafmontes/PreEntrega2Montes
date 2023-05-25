@@ -3,180 +3,299 @@
 	padding: 0;
     box-sizing: border-box;
 }
-
-h1 {
-    color: white;
+/* Estilos para la navegación */
+nav {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    font-size: larger;
+    text-align: right;
+    justify-content: space-between;
+    padding: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-right: 25px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .selector-logo {
+    height: 300px;
     padding: 15px;
+    background-repeat: no-repeat;
 }
-
-h2 {
-color: white;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        padding: 15px;
-}
-
-ul {
+  
+  /* Estilos para la sección de inicio */
+  .inicio {
+    background-color: black;
     color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .inicio h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .inicio p {
+    font-size: 24px;
+  }
+  
+  /* Estilos para la sección de servicios */
+  .servicios {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+  }
+  
+  .servicios h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .servicios .serv {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+   
+  }
+  
+  .servicios .serv img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .servicios .serv h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .servicios .serv p {
+    font-size: 18px;
+    text-align: justify;
+  }
+  
+
+  /* Estilos para los grids del inicio */
+  .container {
+    background-color: black;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    background-color: black;
+    color: white;
+  }
+  
+  .col-md-4 {
+    width: 33.33%;
+  }
+  
+  /* Media queries */
+  @media (max-width: 991px) {
+    .col-md-4 {
+      width: 50%;
     }
+  }
+  
+  @media (max-width: 767px) {
+    .col-md-4 {
+      width: 100%;
+    }
+  }
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    padding: 50px 0;
+    background-color: black;
+  }
+  
+  .contact-form img {
+    max-width: 50%;
+    /* width: 300px;
+    height: 300px; */
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .contact-form textarea {
+    height: 200px;
+  }
+  
+  .contact-form button {
+    background-color: #333;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #555;
+  }
+  /* Estilos para los grids */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    
+  }
+  
+  .col-sm-12 {
+    width: 100%;
+  }
+  
+  .col-sm-6 {
+    width: 50%;
+  }
+  
+  .col-md-4 {
+    width: 33.33%;
+  }
+  
+  .col-md-6 {
+    width: 50%;
+  }
+  
+  /* Media queries */
+  @media (max-width: 767px) {
+    .col-sm-12 {
+      width: 100%;
+    }
+    .col-sm-6 {
+      width: 100%;
+    }
+    .col-md-4 {
+      width: 50%;
+    }
+    .col-md-6 {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-4 {
+      width: 50%;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .col-md-4 {
+      width: 25%;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+  /* Estilo para clientes */
+  .clientes {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+  }
+
+  .inicio {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .inicio h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .inicio p {
+    font-size: 24px;
+  }
+
+
+/* Estilo para todos los footer */
+footer {
+  background-color: black;
+  color: white;
+}
 
 .selector-footer {
-    color: grey ;
-    font-style: italic;
-    font-size: small;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 15px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
+background-color: black;
+color: white;
+/* font-style: italic; */
+font-size: small;
+font-weight: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding: 15px;
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
 }
 
-p {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
-}
-
-ul {
-    color: white
-}
-
-.headerindex {
-        background-color: black;
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-}
-
-.display {
-    display: flex;
-    color: white;
-    font-weight: bold;
-
-}
-body {
-        background-color: black;/*
-        display: grid;
-        grid-template-areas: 
-        'encabezado encabezado'
-        'contenido publicidad'
-        'pie-pagina pie-pagina'
-        ;*/
-               
-}
-
-.headerindex {
-background-image: url(assets/agua.jpg);
-background-repeat: repeat-x;
- max-width: 1200px;
-}
-
-header nav ul {
-    padding: 15px;
-    margin-left: 20px;
-    text-decoration: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    padding: 15px;
-}
-
-.selector-logo {
-    height: 100px;
-    padding: 15px;
-    background-repeat: no-repeat;
-}
-
-.volver {
-    height: 100px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    padding: 15px;
-}
-
-img {
-    height: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* .seccionp {
-    width: 400;
-    height: 150;
-    background-color: black;
-    
-} */
-
-.boxgeneral {
-    width: 400px;
-    height: 200px;
-    background-color: grey;
-    padding: 10px;
-    border: solid 1px;
-    margin: 10px;
-    
-}
-
-.divindex {
-    width: 700px;
-    height: 200px;
-    background-color: black;
-    padding: 10px;
-    border: solid 1px;
-    margin: 10px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    
-    
-    
-}
-
-.boxservicios {
-    width: 1000px;
-    height: 500px;
-    background-color: black;
-    padding: 10px;
-    border: solid 1px white;
-    margin: 10px;
-    
-}
-
-.boxservicios img {
-    /* width: 500px;
-    height: 300px; */
-    padding: 10px 15px;
-}
-
-/*
-.headernosotros {
-    background-color: aqua;
-    grid-area: encabezado;
-   
-}
-.mainnosotros {
-    background-color: yellow;
-    grid-area: contenido;
-}
-.asidenosotros {
-        background-color: orangered;
-        grid-area: publicidad;
-}
-.footernosotros {
-    background-color: white;
-}
-*/
-.hero {
-
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    margin-top: 50px;
-}
 

@@ -8,11 +8,50 @@
     <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-    <header>
-        <img src="../assets/logo2.png" alt="logo" class="selector-logo">
-        <h1>CONTACTO</h1>   
+    <header class="header">
+        <nav>
+            <ul class="display">
+                <li> <a href="../index.html"> Inicio </a> </li> 
+                <li> <a href="clientes.html"> Clientes </a> </li>
+                <li> <a href="contact.html"> Contacto </a> </li>
+            </ul>
+        </nav>            
     </header>
-    <main>
+
+<main>
+    <section class="inicio">
+      <!-- <h1>Contacto</h1> -->
+      <p>Trabajemos juntos!</p>
+    </section>
+    <section class="contact-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <img src="../assets/contacto.png" alt="Contacto">
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <form>
+              <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- <main> ANTERIOR A LA CORRECCION
         
         <img src="../assets/contacto.png" alt="Contacto">
         <div class="boxgeneral">
@@ -20,10 +59,9 @@
             <p>Teléfono: Lorem ipsum dolor sit amet .</p>
          </div>
         <a href="../index.html" class="volver"> Volver al inicio </a>  
-    </main>
+    </main> -->
     <footer>
-        <p class="selector-footer">Todos los derechos reservados 2023</p>
-
+      <p class="selector-footer">Todos los derechos reservados © 2023</p>
     </footer>
     
 </body>
